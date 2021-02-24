@@ -187,17 +187,17 @@
 
       <div class="w3-container" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
 
-        <div class="w3-card w3-margin" style="width:200px; height: 200px;" ng-repeat="person in team | limitTo: showMore ? team.length : 2" ng-click="showModal(person)">
+        <div class="w3-card w3-margin" style="width:200px; height: 200px; cursor: pointer;" ng-repeat="person in team | limitTo: showMore ? team.length : 2" ng-click="showModal(person)">
           <img ng-src="{{person.img}}" style="width:100%" class="w3-hover-opacity" alt="{{person.name}}">
           <h6 class="w3-padding">{{person.name}}</h6>
         </div>    
 
-        <div class="w3-card w3-margin w3-opacity" style="width:200px; height: 200px;" ng-if="!showMore" ng-click="showModal(team[2])">
+        <div class="w3-card w3-margin w3-opacity" style="width:200px; height: 200px; cursor: pointer;" ng-if="!showMore" ng-click="showModal(team[2])">
           <img ng-src="{{team[2].img}}" style="width:100%" class="w3-hover-opacity" alt="{{team[2].name}}">
           <h6 class="w3-padding">{{team[2].name}}</h6>
         </div> 
 
-        <div class="w3-card w3-margin w3-opacity-max" style="width:200px; height: 200px;" ng-if="!showMore" ng-click="showModal(team[3])">
+        <div class="w3-card w3-margin w3-opacity-max" style="width:200px; height: 200px; cursor: pointer;" ng-if="!showMore" ng-click="showModal(team[3])">
           <img ng-src="{{team[3].img}}" style="width:100%" class="w3-hover-opacity" alt="{{team[3].name}}">
           <h6 class="w3-padding">{{team[3].name}}</h6>
         </div> 
