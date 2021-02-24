@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>W3.CSS Template</title>
+    <title>The Film</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="white">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/9128ff7549.js" crossorigin="anonymous"></script>
     
+    <script src="https://kit.fontawesome.com/9128ff7549.js" crossorigin="anonymous"></script>    
     <script src="js/shared/angular-1.2.32.min.js"></script>
         
   </head>
 
-  <body ng-app="main" ng-controller="mainController">
+  <body ng-app="main" ng-controller="mainController" style="cursor: default;">
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -22,10 +25,11 @@
         <a href="#home" class="w3-bar-item w3-button w3-wide"><i class="fas fa-video"></i> The Film</a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">    
-          <a href="#about" class="w3-bar-item w3-button">ABOUT</a>                    
-          <a href="#project" class="w3-bar-item w3-button"><i class="fas fa-film"></i> PROJECTs</a>
+          <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>                    
+          <a href="#project" class="w3-bar-item w3-button"><i class="fas fa-film"></i> PROJECT</a>
           <a href="#team" class="w3-bar-item w3-button"><i class="fas fa-users"></i> TEAM</a>
           <a href="#production" class="w3-bar-item w3-button"><i class="fa fa-chart-pie"></i> PRODUCTION</a>
+          <a href="#production" class="w3-bar-item w3-button">CONTACT</a>
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -38,10 +42,11 @@
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-light-grey">x Close</a>
-      <a href="#about" class="w3-bar-item w3-button" onclick="w3_close()">ABOUT</a>                    
-      <a href="#project" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fas fa-film"></i> PROJECTs</a>
+      <a href="#about" class="w3-bar-item w3-button" onclick="w3_close()">ABOUT US</a>                    
+      <a href="#project" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fas fa-film"></i> PROJECT</a>
       <a href="#team" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fas fa-users"></i> TEAM</a>
       <a href="#production" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-chart-pie"></i> PRODUCTION</a>
+      <a href="#production" class="w3-bar-item w3-button" onclick="w3_close()">CONTACT</a>
     </nav>
 
     <!-- Header with full-height image -->
@@ -52,7 +57,7 @@
         <i class="w3-serif">" Art is not a mirror held up to reality,<span class="w3-hide-medium w3-hide-large"><br></span> but a hammer with which to shape it. "<br><i class="w3-right">(Bertolt Brecht)</i></i>
         <!--<p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>-->
       </div> 
-      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px;">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-instagram w3-hover-opacity"></i>
         <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -74,69 +79,106 @@
 
     <!-- About Section -->
     <div class="w3-container" style="padding:128px 16px" id="about" name="about">
-      <h3 class="w3-center">ABOUT THE PRODUCTION</h3>
+      <h3 class="w3-center">ABOUT US</h3>
       <p class="w3-center w3-large">Key features of our company</p>
       <div class="w3-row-padding w3-center" style="margin-top:64px;">
-        <div class="w3-third">
-          <i class="fas fa-glasses w3-margin w3-jumbo w3-center"></i>
-          <p class="w3-large">Based on Experience</p>
-          <p>Experience is action. We aim for pragmatism, in a world where a papersheet counts more than Experience.</p><br>
+        
+        <div class="w3-third w3-padding-large">
+          <i class="fas fa-dragon w3-margin w3-jumbo"></i>
+          <p class="w3-large">Creativity</p>          
+          <p class="w3-tooltip">
+            <i class="fas fa-music"></i>&nbsp; Come with "us"<br>
+            And you'll be<br>
+            In a world<br>
+            of pure imagination...
+          </p>            
         </div>
 
-        <div class="w3-third">
+        <div class="w3-third w3-padding-large">
           <i class="fa fa-heart w3-margin w3-jumbo"></i>
           <p class="w3-large">Passion</p>
           <p>Cinema, a lifetime Passion. Are we talking about love? Yes, this is how we like to define it.</p><br>
         </div>
 
-        <div class="w3-third">
-          <i class="fas fa-dragon w3-margin w3-jumbo"></i>
-          <p class="w3-large">Creativity</p>
-          
-          <p class="w3-tooltip">
-            <i class="fas fa-music"></i> Come with "us"<br>
-            And you'll be<br>
-            In a world<br>
-            of pure imagination...  <br><br>
-            <span class="w3-text w3-tiny w3-bold"><b>Pure Imagination</b><br> <em>Album Willy Wonka and the Chocolate Factory<br> (Soundtrack from the Motion Picture)</em></span>
-          </p>
-            
+        <div class="w3-third w3-padding-large">
+          <i class="fas fa-glasses w3-margin w3-jumbo w3-center"></i>
+          <p class="w3-large">Based on Experience</p>
+          <p>Experience is action. We aim for pragmatism, in a world where a papersheet counts more than Experience.</p><br>
         </div>
+
       </div>
     </div>
 
-    <!-- Skills Section -->
+    <!-- Project Milestones Section -->
     <div class="w3-container w3-light-grey w3-padding-64" id="project">
       
       <div class="w3-row-padding">
 
-        <div class="w3-col m6">
-          <h3>Projects</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-          tempor incididunt ut labore et dolore.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+        <div class="w3-col m6 w3-padding-large">
+          <h3>The Project</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore.</p>
         </div>
 
         <!-- timeline/main_steps_progress/todolist/clock_progress -->
-        <div class="w3-col m6">
-          <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+        <div class="w3-col m6  w3-padding-large">
+          <p class="w3-wide"><i class="fas fa-feather w3-margin-right"></i>screenplay</p>
           <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+            <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
           </div>
-          <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+
+          <p class="w3-wide"><i class="fas fa-file-video w3-margin-right"></i>shot list</p>
           <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+            <div class="w3-container w3-dark-grey w3-center" style="width:65%">65%</div>
           </div>
-          <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+
+          <p class="w3-wide"><i class="fa fa-images w3-margin-right"></i>storyboard</p>
           <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+            <div class="w3-container w3-dark-grey w3-center" style="width:15%">15%</div>
           </div>
-        </div>
+        </div>       
       </div>
 
+      <br>
       <!-- prev next buttons to slide between projects-->
     </div>
+
+     <!-- Next Milestone Deadline -->
+    <div class="w3-container w3-center w3-dark-grey">
+      <br>
+      <h1>Next Milestone Deadline</h1>
+      <div class="w3-container w3-row w3-center w3-padding-64">
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">60</span>
+          <br>Days
+        </div>
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">7</span>
+          <br>Hours
+        </div>  
+    
+        <div class="w3-quarter">
+          <span class="w3-xxlarge">40</span>
+          <br>Minutes
+        </div>      
+        <div class="w3-quarter">
+          <span class="w3-xxlarge" id="seconds">7</span>
+          <br>Seconds
+        </div>      
+      </div>
+    </div>
+
+    <script>
+      window.setInterval(()=>{
+        let span = document.querySelector('span#seconds')
+        let value = Number(span.innerText)
+        value = --value <= 0 ? 60 : value
+        span.innerText = value
+      }, 1000)
+
+        
+    </script>
+     
 
     <!-- The Team Section -->
     <div class="w3-container" style="padding:128px 16px" id="team">
@@ -193,37 +235,24 @@
       <p class="w3-center"><a ng-href="{{showMore ? '' : '#team'}}"><button class="w3-button" ng-click="showMore = !showMore">show {{ !showMore ? 'more' : 'less' }}</button></a></p>
     </div>
 
-    <!-- Promo Section "Statistics" -->
+    <!-- Collaborators -->
     <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
       <div class="w3-quarter">
-        <span class="w3-xxlarge">15</span>
-        <br>Collaborators
+        <span class="w3-xxlarge">4+</span>
+        <br>Technicians
       </div>
       <div class="w3-quarter">
-        <span class="w3-xxlarge">7</span>
+        <span class="w3-xxlarge">15+</span>
+        <br>Crew
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">7+</span>
         <br>Cast
       </div>  
-  
       <div class="w3-quarter">
-        <span class="w3-xxlarge">{{ 27000 | currency : '€' }}</span>
-        <br>Fundings found
+        <span class="w3-xxlarge">26+</span>
+        <br>Total Staff
       </div>      
-      <div class="w3-quarter" style="cursor: pointer;" onclick="document.getElementById('chartpie').style.display='block'">
-        <span class="w3-xxlarge">{{ 100000 | currency : '€' }}</span>
-        <br>Fundings required
-      </div>
-      
-    </div>
-
-    <!-- <i class="fa fa-chart-pie"></i> -->
-
-    <div class="w3-modal" id="chartpie">
-      <div class="w3-modal-content">
-        <div class="w3-card w3-padding-large">
-          <h1>
-          <i class="fa fa-chart-pie" style="font-size: 128px;"></i></h1>
-        </div>        
-      </div>
     </div>
 
     <!-- Producers Section -->
@@ -258,6 +287,53 @@
       </div>
     </div>
 
+    <!-- Fundings -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64"> 
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">{{ 63475 | currency : '€' }}</span>
+        <br>Salaries
+      </div> 
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">{{ 12608 | currency : '€' }}</span>
+        <br>Equipment rental
+      </div> 
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">{{ 27000 | currency : '€' }}</span>
+        <br>Fundings found
+      </div>      
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">{{ 109412 | currency : '€' }}</span>
+        <br>Fundings required
+      </div>
+      
+    </div>
+
+    <!-- contact us -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact" name="contact">
+      <h3 class="w3-center">CONTACT</h3>
+      <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+      <div style="margin-top:48px">
+        
+        <!-- <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+        <br> -->
+
+        <form action="/action_page.php" target="_blank" style="padding: 0 3em 0 3em;">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Your Email" required name="Email"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+          <p><textarea class="w3-input w3-border" placeholder="Message" required name="Message" rows="3"></textarea></p>
+          <p>
+            <button class="w3-button w3-black" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
       <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -272,6 +348,26 @@
       <p class="w3-tiny">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
     </footer>
 
+
+    <script>     
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+      
+      function w3_open() {
+        if (mySidebar.style.display === 'block') {
+          mySidebar.style.display = 'none';
+        } else {
+          mySidebar.style.display = 'block';
+        }
+      }
+      
+      // Close the sidebar with the close button
+      function w3_close() {
+          mySidebar.style.display = "none";
+      }
+    </script>
+
+    
     <!-- modules -->
     <script src="js/angular/app.js"></script>
     <!-- controllers -->
